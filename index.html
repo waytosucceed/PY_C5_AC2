@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python-Activities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./logo/Logo.png" alt="Logo" class="logo" />
+        <img src="./logo/header.png" alt="Header" class="header-image" />
+    </header>
+  
+
+    <p style="text-align: center; font-size: 1.7rem; font-weight: bold; margin-bottom: 0;">Activity
+        👉🏽<a href="https://colab.research.google.com/drive/13N4k5XHGo71EsLVG7NeCypbnt0jD3l9K?usp=sharing" target="_blank" class="button">Open Template</a>
+    
+        </p>
+
+    <main style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+        <section id="activity1">
+            <h2>Activity 1: The Magical Letter</h2>
+           
+            <p>You are on a solo trip and while traveling you discover an ancient Magical Letter. To understand the letter you need to know how to work with strings to read, decode and change the messages written inside it.
+<br>
+                You need to write a python program that will help in decoding message and rearranging parts of the text to reveal the location of hidden treasure.
+                </p>
+            <p>Step 1: It shows a message, but its parts are jumbled. You need string concatenation to combine fragments into a single readable sentence to get a secret message. Make sure you remove unwanted spaces from the parts.</p>
+            <button class="show-answer-btn" id="show-answer-btn1">Show Code</button>
+            <img src="./images/a1-1.png" class="answer-img" id="answer-img1" alt="activity" style="max-width: 70%;">
+
+
+            <p>Step 2:The magic word must be repeated 3 times to reveal the next steps.</p>
+            <button class="show-answer-btn" id="show-answer-btn2">Show Code</button>
+            <img src="./images/a1-2.png" class="answer-img" id="answer-img2" alt="activity" style="max-width: 30%;">
+
+       
+
+            <p>Step 3: Since you have spelled the magic word thrice you can see the next part of the letter. You need to decode this to get the location of the treasure.
+                From this sentence, you need to slice the following parts and then join them together to know where you will find treasure.
+                
+            <ul>
+                <li>Part 1: 35 to 61</li>
+                <li>Part 2: 172 to 186</li>
+                <li>Part 3: 124 to 133</li>
+                <li>Part 4: 276 to 280</li>
+                <li>Part 5: 197 to 213</li>
+                <li>Part 6: 305 to 309</li>
+                <li>Part 7: 222 to 227</li>
+                <li>Part 8: 'There you will find the treasure'</li>
+            </ul>
+            Show the final sentence using a formatted string.
+            </p>
+            <button class="show-answer-btn" id="show-answer-btn3">Show Code</button>
+            <img src="./images/a1-3.png" class="answer-img" id="answer-img3" alt="activity" style="max-width: 70%;">
+           
+        </section>
+
+        <section id="activity2">
+            <h2>Activity 2: String Symmetry</h2>
+            <p>Write a program to take 2 words as input from the user and check if the number of characters in the word is the same. </p>
+            <img src="./images/sc5.png" class="answer-img" id="answer-img5" alt="activity">
+            <button class="show-answer-btn" id="show-answer-btn5">Show Code</button>
+        </section>
+    </main>
+
+    <button class="challenge-btn" onclick="window.location.href='challenges.html'">Challenges</button>
+
+    <script>
+        // Step 1: Show or hide code for Step 1 of Activity 1
+        document.getElementById('show-answer-btn1').addEventListener('click', function() {
+            var img = document.getElementById('answer-img1');
+            if (img.style.display === 'none' || img.style.display === '') {
+                img.style.display = 'block';
+                this.textContent = 'Hide Code';
+            } else {
+                img.style.display = 'none';
+                this.textContent = 'Show Code';
+            }
+        });
+    
+        // Step 2: Show or hide code for Step 2 of Activity 1
+        document.getElementById('show-answer-btn2').addEventListener('click', function() {
+            var img = document.getElementById('answer-img2');
+            if (img.style.display === 'none' || img.style.display === '') {
+                img.style.display = 'block';
+                this.textContent = 'Hide Code';
+            } else {
+                img.style.display = 'none';
+                this.textContent = 'Show Code';
+            }
+        });
+    
+        // Step 3: Show or hide code for Step 3 of Activity 1
+        document.getElementById('show-answer-btn3').addEventListener('click', function() {
+            var img = document.getElementById('answer-img3');
+            if (img.style.display === 'none' || img.style.display === '') {
+                img.style.display = 'block';
+                this.textContent = 'Hide Code';
+            } else {
+                img.style.display = 'none';
+                this.textContent = 'Show Code';
+            }
+        });
+   
+    
+        // Activity 2: Show or hide code for Activity 2 - String Symmetry
+        document.getElementById('show-answer-btn5').addEventListener('click', function() {
+            var img = document.getElementById('answer-img5');
+            if (img.style.display === 'none' || img.style.display === '') {
+                img.style.display = 'block';
+                this.textContent = 'Hide Code';
+            } else {
+                img.style.display = 'none';
+                this.textContent = 'Show Code';
+            }
+        });
+    </script>
+    
+
+</body>
+</html>
